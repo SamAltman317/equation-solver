@@ -5,11 +5,7 @@ from sympy.parsing.sympy_parser import parse_expr, standard_transformations, imp
 st.set_page_config(page_title="一元一次方程求解器", layout="centered")
 
 st.title("一元一次方程求解器")
-st.markdown("""
-支持括号、分数、分式、乘方、隐式乘法等复杂表达式。<br>
-例：`5{2-5[6+3(2x-5/3)/(9/3+6/5)]}=4`<br>
-输入如：`2x+3=7`、`(2x+1)/3=5`、`3x^2-4=5`、`[x+1]/2=3`、`(x-1)/(2x+3)=4`
-""", unsafe_allow_html=True)
+# 不显示任何示例或说明
 
 def preprocess_expr(expr):
     expr = expr.replace('[', '(').replace(']', ')')
